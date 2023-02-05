@@ -1,0 +1,54 @@
+.navbar_left {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.navbar_right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.navbar_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    padding: 0rem 2rem;
+    padding-bottom: 0rem;
+    background-color: white;
+}
+.send_btn {
+    background-color: var(--bg-primary);
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.send_btn:hover {
+    background-color: var(--bg-primary-dark);
+}
+.navbar_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.navbar_bottom > button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    color: rgb(57, 57, 57);
+    transition: all 150ms ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: .5rem;
+}
+.navbar_bottom > button:hover{
+    border-bottom: 2px solid var(--bg-primary);
+    background: rgb(233, 232, 232);
+    border-radius: 5px;
+}

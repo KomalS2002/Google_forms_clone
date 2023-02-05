@@ -1,0 +1,27 @@
+.form_heading {
+    height: 8rem;
+    width: 45rem;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 1rem;
+    border-top: 0.5rem solid var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+}
+.form_heading > input {
+    border: none;
+    outline: none;
+    padding: 0rem 1rem;
+    margin: 1rem 0rem;
+}
+
+.title_heading {
+    font-size: 2rem;
+}
+.form_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0ebf8;
+}

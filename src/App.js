@@ -5,7 +5,7 @@ import Form from "./pages/form";
 function App() {
     return (
         <>
-        <Navbar/>   
+            <Navbar />
             <Form />
         </>
     );
