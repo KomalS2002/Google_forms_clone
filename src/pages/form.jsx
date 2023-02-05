@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import Question from "../components/question";
 
 const Form = () => {
-  return (
-    <div>sex</div>
-  )
-}
+    return (
+        <>
+            <div>
+                <input type="text" />
+                <input type="text" />
+            </div>
+            <Question />
+            <button>Add</button>
+        </>
+    );
+};
 
-export default Form
+export default Form;
