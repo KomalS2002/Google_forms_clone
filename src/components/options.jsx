@@ -5,8 +5,7 @@ const Options = () => {
     return (
         <div style={{ display: "flex", flexDirection: "column" }}>
             <Option />
-            <Option />
-            <Option />
+            
             <div
                 style={{
                     paddingLeft: "1rem",
