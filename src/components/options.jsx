@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Option from "./option";
 
 const Options = () => {
+    const [optionsarr, setOptionsarr] = useState([<Option />]);
+    const handleClick = () => {
+        setOptionsarr(optionsarr.concat(<Option />));
+    };
     return (
         <div style={{ display: "flex", flexDirection: "column" }}>
-            <Option />
-            
+            {optionsarr}
+
             <div
                 style={{
                     paddingLeft: "1rem",
@@ -13,6 +17,7 @@ const Options = () => {
                     textDecoration: "underline",
                     color: "blue",
                 }}
+                onClick={handleClick}
             >
                 Add Option{" "}
             </div>

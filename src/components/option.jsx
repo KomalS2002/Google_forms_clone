@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Option = () => {
+    const [val, setVal] = useState("Option");
     return (
         <input
             type="text"
             style={{ margin: ".2rem 1rem", border: "none", outline: "none" }}
-            value={"Option"}
+            value={val}
+            onChange={(e) => setVal(e.target.value)}
         />
     );
 };

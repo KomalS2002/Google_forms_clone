@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Paragraph = () => {
+    const [val,setVal] = useState("paragraph")
     return (
         <input
             type="text"
@@ -10,7 +11,8 @@ const Paragraph = () => {
                 padding: "0rem 1rem",
                 color: "rgb(57, 57, 57)",
             }}
-            value={"Paragraph"}
+            value={val}
+            onChange={(e)=>setVal(e.target.value)}
         />
     );
 };
